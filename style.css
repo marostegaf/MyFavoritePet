@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --chocolate: #524A4E;
+    --white-pink: #FDEFF4;
+    --ligth-pink: #FFC0D3;
+    --dark-pink: #FF5C8D;
+}
+
+/* HAMBURGUER */
+#burguer {
+    display: none;
+    color: var(--dark-pink);
+    background-color: var(--white-pink);
+
+    padding: 8px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--white-pink);
+    width: 100vw;
+    height: 100vh;
+
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--dark-pink);
+    color: #FDEFF4;
+}
+
+.texto-icone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cachorro-feliz {
+    width: 45px;
+    filter: 1;
+}
+
+#menu {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#menu a {
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    border: 2px solid var(--white-pink);
+    background-color: var(--dark-pink);
+    color: var(--white-pink);
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+#menu a:hover {
+    background-color: var(--white-pink);
+    color: var(--dark-pink);
+    transition: background-color .5s;
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--ligth-pink);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1050px) {   
+    #burguer {
+        display: flex;
+    }
+
+    .texto-icone {
+        width: 100%;
+
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .cachorro-feliz {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+        text-align: center;
+
+        width: 100%;
+    }
+}
