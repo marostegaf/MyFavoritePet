@@ -27,11 +27,10 @@
 
 body {
     background-color: var(--white-pink);
-    width: 100vw;
+    width: calc(100vw -10px);
     height: 100vh;
 
     font-family: "Poppins", sans-serif;
-    overflow: hidden;
 }
 
 header {
@@ -67,7 +66,7 @@ header {
     gap: 10px;
 }
 
-#menu a {
+#menu button {
     padding: 10px 15px;
     border-radius: 10px;
 
@@ -76,13 +75,12 @@ header {
     color: var(--white-pink);
 
     font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
+    font-weight: 600;
 
     cursor: pointer;
 }
 
-#menu a:hover {
+#menu button:hover {
     background-color: var(--white-pink);
     color: var(--dark-pink);
     transition: background-color .5s;
@@ -94,6 +92,24 @@ main {
 
     border-radius: 10px;
     background-color: var(--ligth-pink);
+}
+
+.fotos-cachorros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+
+    padding: 20px 0;
+}
+
+.foto {
+    width: auto; /* Se adapta ao tamanho natural da imagem sem crescer */
+    height: auto; /* Mantém a proporção original */
+    max-width: 400px; /* Impede que fique muito larga */
+    max-height: 500px; /* Impede que fique muito alta */
+    object-fit: contain; /* Garante que a imagem seja exibida sem cortes */
+    border-radius: 10px; /* Apenas para um design mais bonito */
 }
 
 /* MEDIA QUERIES */

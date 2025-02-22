@@ -16,7 +16,10 @@
     <link rel="shortcut icon" href="images/cachorro-feliz.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <script src="script.js" defer></script>
+    <script src="scripts/burguer.js" defer></script>
+    <script src="scripts/ConectaAPI.js" type="module"></script>
+    <script src="scripts/MenuDeRacas.js" type="module"></script>
+    <script src="scripts/MostrarFotos.js" type="module"></script>
 </head>
 <body onresize="esconderAparecerMenuAoMudarTamanho()">
     <header>
@@ -26,17 +29,10 @@
             <img class="cachorro-feliz" src="images/cachorro-feliz.png" alt="">
         </div>
         <nav id="menu" style="display: none;">
-            <a href="#">Opção 1</a>
-            <a href="#">Opção 2</a>
-            <a href="#">Opção 3</a>
-            <a href="#">Opção 4</a>
-            <a href="#">Opção 5</a>
-            <a href="#">Opção 6 </a>
         </nav>
     </header>
     <main>
-        <h2>Outro Nome Aqui</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam reiciendis soluta dolores ut beatae ullam temporibus. Molestias ea quaerat incidunt, quod itaque nesciunt amet nam vero facere praesentium fugiat pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos expedita, sit suscipit minus fugit laborum atque perferendis harum unde aliquid, porro soluta eligendi nam culpa. Perspiciatis aliquam aspernatur ut.</p>
+        <ul class="fotos-cachorros"></ul>
     </main>
 </body>
 </html>
