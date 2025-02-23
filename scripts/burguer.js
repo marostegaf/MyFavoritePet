@@ -7,7 +7,7 @@ function abrirMenu() {
 }
 
 function esconderAparecerMenuAoMudarTamanho() {
-    if (window.innerWidth >= 1050) {
+    if (window.innerWidth >= 1200) {
         menu.style.display = "flex"
     } else {
         menu.style.display = "none"

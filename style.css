@@ -91,30 +91,29 @@ main {
     padding: 10px;
 
     border-radius: 10px;
-    background-color: var(--ligth-pink);
 }
 
 .fotos-cachorros {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 38px;
 
     padding: 20px 0;
 }
 
 .foto {
-    width: auto; /* Se adapta ao tamanho natural da imagem sem crescer */
-    height: auto; /* Mantém a proporção original */
-    max-width: 400px; /* Impede que fique muito larga */
-    max-height: 500px; /* Impede que fique muito alta */
-    object-fit: contain; /* Garante que a imagem seja exibida sem cortes */
-    border-radius: 10px; /* Apenas para um design mais bonito */
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1050px) {   
+@media (max-width: 1200px) {   
     #burguer {
         display: flex;
     }
@@ -131,7 +130,7 @@ main {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     header {
         flex-direction: column;
     }
